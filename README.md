@@ -38,19 +38,19 @@ This will generate the _install directory containing the minimal root filesystem
 
 4. Create an Initramfs
 Navigate into the BusyBox installation directory:
-
-cd _install
-Create a minimal init script:
-cat > init << 'EOF'
-#!/bin/sh
-# Simple init script
-echo "Hello from the AArch64 initramfs!" > /dev/console
-# Set minimal shell environment
-export PATH=/bin:/sbin:/usr/bin:/usr/sbin
-# Launch an interactive shell
-exec /bin/sh
-EOF
-chmod +x init
+  
+  cd _install
+  Create a minimal init script:
+  cat > init << 'EOF'
+  #!/bin/sh
+  Simple init script
+  echo "Hello from the AArch64 initramfs!" > /dev/console
+  Set minimal shell environment
+  export PATH=/bin:/sbin:/usr/bin:/usr/sbin
+  Launch an interactive shell
+  exec /bin/sh
+  EOF
+  chmod +x init
 
 Generate the initramfs image:
 
