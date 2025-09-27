@@ -31,13 +31,13 @@ make menuconfig
 - Navigate to Settings → Build Options.
 - Enable the option: CONFIG_STATIC=y
 
-Compile BusyBox:
+5. Compile BusyBox:
 
 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu-
 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- install
 This will generate the _install directory containing the minimal root filesystem.
 
-4. Create an Initramfs
+6. Create an Initramfs
 Navigate into the BusyBox installation directory:
   
 cd _install
@@ -53,12 +53,12 @@ exec /bin/sh
 EOF
 chmod +x init
 
-Generate the initramfs image:
+7. Generate the initramfs image:
 
 find . -print0 | cpio --null -ov --format=newc > ../../initramfs.cpio
 This will produce the file ~/initramfs.cpio.
 
-5. Boot the Kernel in QEMU
+8. Boot the Kernel in QEMU
 From the parent directory (where both linux/ and initramfs.cpio reside), launch QEMU with the following
 qemu-system-aarch64 -machine virt -cpu cortex-a57 -nographic -kernel linux/arch/arm64
 At this point, the kernel should boot, and you will be greeted with the BusyBox shell via the initram
