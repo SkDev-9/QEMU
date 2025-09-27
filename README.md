@@ -16,15 +16,20 @@ git clone --depth 1 --branch v6.6 https://git.kernel.org/pub/scm/linux/kernel/gi
 cd linux
 
 3. Generate a default configuration for the ARM64 architecture:
+
 make ARCH=arm64 defconfig
+
 Compile the kernel image and device tree blobs (DTBs):
+
 make -j$(nproc) ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image dtbs
 
-4. Build BusyBox
+5. Build BusyBox
 Clone the BusyBox source code:
 
 git clone --depth=1 https://git.busybox.net/busybox.git
+
 cd busybox
+
 Configure BusyBox and ensure static linking is enabled:
 
 make menuconfig
@@ -34,7 +39,9 @@ make menuconfig
 5. Compile BusyBox:
 
 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu-
+
 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- install
+
 This will generate the _install directory containing the minimal root filesystem.
 
 6. Create an Initramfs
@@ -56,9 +63,12 @@ chmod +x init
 7. Generate the initramfs image:
 
 find . -print0 | cpio --null -ov --format=newc > ../../initramfs.cpio
+
 This will produce the file ~/initramfs.cpio.
 
 8. Boot the Kernel in QEMU
 From the parent directory (where both linux/ and initramfs.cpio reside), launch QEMU with the following
+
 qemu-system-aarch64 -machine virt -cpu cortex-a57 -nographic -kernel linux/arch/arm64
+
 At this point, the kernel should boot, and you will be greeted with the BusyBox shell via the initram
