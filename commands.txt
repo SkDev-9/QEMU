@@ -1,0 +1,530 @@
+    1  code
+    2  [200~sudo apt install gawk wget git diffstat unzip texinfo gcc build-essential chrpath socat cpio python3 python3-pip python3-pexpect xz-utils debianutils iputils-ping python3-git python3-jinja2 libegl1-mesa libsdl1.2-dev pylint3 xterm python3-subunit mesa-common-dev zstd liblz4-tool
+    3  sudo apt install gawk wget git diffstat unzip texinfo gcc build-essential chrpath socat cpio python3 python3-pip python3-pexpect xz-utils debianutils iputils-ping python3-git python3-jinja2 libegl1-mesa libsdl1.2-dev pylint3 xterm python3-subunit mesa-common-dev zstd liblz4-tool
+    4  sudo apt update
+    5  sudo apt install gawk wget git diffstat unzip texinfo gcc build-essential chrpath socat cpio python3 python3-pip python3-pexpect xz-utils debianutils iputils-ping python3-git python3-jinja2 libegl1-mesa libsdl1.2-dev pylint3 xterm python3-subunit mesa-common-dev zstd liblz4-tool
+    6  cat /etc/os-release 
+    7  sudo apt upgrade -y
+    8  cat /etc/os-release 
+    9  sudo apt install gawk wget git diffstat unzip texinfo gcc build-essential chrpath socat cpio python3 python3-pip python3-pexpect xz-utils debianutils iputils-ping python3-git python3-jinja2 libegl1-mesa libsdl1.2-dev pylint3 xterm python3-subunit mesa-common-dev zstd liblz4-tool
+   10  ls /mnt/hgfs/shared
+   11  ls /mnt/
+   12  ls
+   13  sudo apt install gawk wget git diffstat unzip texinfo gcc build-essential chrpath socat cpio python3 python3-pip python3-pexpect xz-utils debianutils iputils-ping python3-git python3-jinja2 libsdl1.2-dev pylint xterm python3-subunit mesa-common-dev zstd lz4
+   14  cd /home/
+   15  ls
+   16  mkdir yocto_tutorial
+   17  sudo mkdir yocto_tutorial
+   18  ls
+   19  cd yocto_tutorial/
+   20  ls
+   21  git clone https://git.yoctoproject.org/poky
+   22  sudo git clone https://git.yoctoproject.org/poky
+   23  ls
+   24  cd poky/
+   25  ls
+   26  git checkout scarthgao
+   27  sudo git checkout scarthgao
+   28  sudo git checkout scarthgap
+   29  ls
+   30  git branch
+   31  sudo git branch
+   32  source oe-init-build-env
+   33  sudo source oe-init-build-env
+   34  ls
+   35  sudo source oe-init-build-env
+   36  source oe-init-build-env
+   37  sudo usermod -aG sudo $USER
+   38  source oe-init-build-env
+   39  sh
+   40  ls
+   41  pwd
+   42  ls 
+   43  echo $SHELL
+   44  ps -p $S
+   45  . oe-init-build-env 
+   46  s . oe-init-build-env 
+   47  sudo root
+   48  sudo su
+   49  cd ..
+   50  ls
+   51  rm -rf yocto_tutorial/
+   52  df
+   53  ls
+   54  sudo rm -rf yocto_tutorial/
+   55  ls
+   56  df
+   57  cd saurabh/
+   58  ls
+   59  ifconfig
+   60  sudo apt install net-tools
+   61  ls
+   62  pwd
+   63  mkdir kernel_Source 
+   64  LS
+   65* cd kernel_Source
+   66  ls
+   67  git clone https://github.com/altera-fpga/linux-socfpga
+   68  git checkout socfpga-6.18.20-lts
+   69  cd linux-socfpga/
+   70  git checkout socfpga-6.18.20-lts
+   71  git checkout socfpga-6.12.43-lts
+   72  ls
+   73  lsw
+   74  ls
+   75  cd ..
+   76  ls
+   77  cd linux-socfpga/n
+   78  ls
+   79  cd linux-socfpga/
+   80  ls
+   81  python3 --version
+   82  cd ..
+   83  git clone https://github.com/vpav/licc.git
+   84  cd li
+   85  cd licc
+   86  ls
+   87  python3 -m venv .venv
+   88  pip install --upgrade pip
+   89  pip install -r requirements.txt
+   90  pip install --upgrade pip
+   91  sudo apt install venv
+   92  sudo apt install python3-venv
+   93  ls
+   94  cd ..
+   95  ls
+   96  cd kernel_Source/licc/
+   97  python3 -m venv .venv
+   98* pip install --upgrade pi
+   99  python3 -m venv
+  100  python3 -m venv .venv
+  101  source .venv/bin/activate
+  102  ls
+  103  pip install --upgrade pip
+  104  pip install -r requirements.txt
+  105  cd ..
+  106  cd li
+  107  cd linux-socfpga/
+  108  ls
+  109  vi Kconfig 
+  110  find -iname config*
+  111  cd arch/arm64/
+  112  ls
+  113  cd configs/
+  114  ls
+  115  cat defconfig 
+  116  cd /home/saurabh/kernel_Source/licc/
+  117  ls
+  118  cat licc.ini 
+  119  cd ../linux-socfpga/arch/arm64/configs/
+  120  ls
+  121  cd ..
+  122  cd licc/
+  123  ls
+  124  python licc.py --lconfig licc.ini --src /home/saurabh/kernel_Source/linux-socfpga/
+  125  python3 licc.py --lconfig licc.ini --src /home/saurabh/kernel_Source/linux-socfpga/
+  126  vim licc.py 
+  127  sudo apt install vim
+  128  vim licc.py 
+  129  python3 licc.py --src /home/saurabh/kernel_Source/linux-socfpga/
+  130  curl -i 'https://services.nvd.nist.gov/rest/json/cves/2.0?cpeName=cpe:2.3:o:linux:linux_kernel:6.12.43:*:*:*:*:*:*:*'
+  131  sudo apt install curl
+  132  ls
+  133  curl -i 'https://services.nvd.nist.gov/rest/json/cves/2.0?cpeName=cpe:2.3:o:linux:linux_kernel:6.12.43:*:*:*:*:*:*:*'
+  134  ls
+  135  curl -i 'https://services.nvd.nist.gov/rest/json/cves/2.0?cpeName=cpe:2.3:o:linux:linux_kernel:6.12.43:*:*:*:*:*:*:*'
+  136  curl -i 'https://services.nvd.nist.gov/rest/json/cves/2.0?cpeName=cpe:2.3:o:linux:linux_kernel:6.12.43:*:*:*:*:*:*:*' > op.txt
+  137  vim op.txt 
+  138  vim licc.py 
+  139  python3 licc.py --src /home/saurabh/kernel_Source/linux-socfpga/
+  140  cd ~/kernel_Source/licc
+  141  python3 - <<'PY'
+import nvdlib
+import inspect
+
+print("nvdlib file:", nvdlib.__file__)
+print("nvdlib version:", getattr(nvdlib, "__version__", "unknown"))
+print()
+print(inspect.signature(nvdlib.searchCVE))
+PY
+
+  142  vim licc.py 
+  143  python3 - <<'PY'
+import nvdlib
+
+cpe = "cpe:2.3:o:linux:linux_kernel:6.12.43"
+
+print("Query:", cpe)
+
+results = nvdlib.searchCVE(
+    virtualMatchString=cpe,
+    limit=5
+)
+
+print("Results:", len(results))
+
+for cve in results:
+    print(cve.id)
+PY
+
+  144  python3 licc.py --src /home/saurabh/kernel_Source/linux-socfpga/
+  145  cd ~/kernel_Source/licc
+  146  python3 - <<'PY'
+import requests
+
+url = "https://services.nvd.nist.gov/rest/json/cpes/2.0"
+
+params = {
+    "keywordSearch": "Linux kernel",
+    "resultsPerPage": 20,
+}
+
+r = requests.get(url, params=params, timeout=60)
+
+print("HTTP:", r.status_code)
+print("URL:", r.url)
+print(r.text[:3000])
+PY
+
+  147  python3 -m pip show nvdlib
+  148  python3 - <<'PY'
+import requests
+
+url = "https://services.nvd.nist.gov/rest/json/cpes/2.0"
+params = {
+    "cpeMatchString": "cpe:2.3:o:linux:linux_kernel",
+    "resultsPerPage": 20,
+}
+
+r = requests.get(url, params=params, timeout=60)
+print("HTTP:", r.status_code)
+print("URL:", r.url)
+print(r.text[:5000])
+PY
+
+  149  cd ~/kernel_Source/licc
+  150  python3 - <<'PY'
+import requests
+
+url = "https://services.nvd.nist.gov/rest/json/cves/2.0"
+
+params = {
+    "cpeName": "cpe:2.3:o:linux:linux_kernel:6.12.43:*:*:*:*:*:*:*",
+    "resultsPerPage": 20,
+}
+
+r = requests.get(url, params=params, timeout=60)
+
+print("HTTP:", r.status_code)
+print("URL:", r.url)
+print()
+
+if r.ok:
+    data = r.json()
+    print("Total CVEs:", data.get("totalResults"))
+
+    for item in data.get("vulnerabilities", []):
+        cve = item["cve"]
+        print(cve["id"])
+else:
+    print(r.text)
+PY
+
+  151  vim licc.py 
+  152  python3 - <<'PY'
+import requests
+
+url = "https://services.nvd.nist.gov/rest/json/cves/2.0"
+
+cpe = "cpe:2.3:o:linux:linux_kernel:6.12.43:*:*:*:*:*:*:*"
+
+params = {
+    "cpeName": cpe,
+    "resultsPerPage": 20,
+}
+
+r = requests.get(url, params=params, timeout=60)
+
+print("HTTP:", r.status_code)
+print("URL:", r.url)
+
+if r.status_code == 200:
+    data = r.json()
+
+    print("Total CVEs:", data.get("totalResults"))
+
+    for item in data.get("vulnerabilities", []):
+        cve = item["cve"]
+        print(
+            cve["id"],
+            "|",
+            cve.get("published", "")
+        )
+else:
+    print(r.text)
+
+
+  153  python3 - <<'PY'
+import requests
+
+url = "https://services.nvd.nist.gov/rest/json/cves/2.0"
+
+cpe = "cpe:2.3:o:linux:linux_kernel:6.12.43:*:*:*:*:*:*:*"
+
+params = {
+    "cpeName": cpe,
+    "resultsPerPage": 20,
+}
+
+r = requests.get(url, params=params, timeout=60)
+
+print("HTTP:", r.status_code)
+print("URL:", r.url)
+
+if r.status_code == 200:
+    data = r.json()
+
+    print("Total CVEs:", data.get("totalResults"))
+
+    for item in data.get("vulnerabilities", []):
+        cve = item["cve"]
+        print(
+            cve["id"],
+            "|",
+            cve.get("published", "")
+        )
+else:
+    print(r.text)
+
+
+
+  154  python3 licc.py --src /home/saurabh/kernel_Source/linux-socfpga/
+  155  cp licc.py.backup licc.py
+  156  sed -n '600,720p' licc.py
+  157  cd ~/kernel_Source/licc
+  158  python3 - <<'PY'
+import requests
+
+url = "https://services.nvd.nist.gov/rest/json/cves/2.0"
+
+params = {
+    "cpeMatchString": "cpe:2.3:o:linux:linux_kernel",
+    "resultsPerPage": 20,
+}
+
+r = requests.get(url, params=params, timeout=60)
+
+print("HTTP:", r.status_code)
+print("URL:", r.url)
+
+if r.ok:
+    data = r.json()
+    print("Total CVEs:", data.get("totalResults"))
+
+    for item in data.get("vulnerabilities", []):
+        cve = item["cve"]
+        print(cve["id"])
+else:
+    print(r.text)
+PY
+
+  159  python3 - <<'PY'
+import requests
+
+cpe = "cpe:2.3:o:linux:linux_kernel:6.12.43:*:*:*:*:*:*:*"
+
+url = "https://services.nvd.nist.gov/rest/json/cves/2.0"
+
+r = requests.get(
+    url,
+    params={
+        "cpeName": cpe,
+        "resultsPerPage": 20,
+    },
+    timeout=60,
+)
+
+print("HTTP:", r.status_code)
+print("URL:", r.url)
+
+if r.ok:
+    data = r.json()
+    print("Total CVEs:", data.get("totalResults"))
+
+    for item in data.get("vulnerabilities", []):
+        print(item["cve"]["id"])
+else:
+    print(r.text)
+PY
+
+  160  python3 licc.py --src /home/saurabh/kernel_Source/linux-socfpga/
+  161  cd ~/kernel_Source/licc
+  162  cp licc.py licc.py.nvdlib-backup
+  163  ls
+  164  sed -n '620,680p' licc.py
+  165  python3 - <<'PY'
+import inspect
+import nvdlib.cve
+
+print(inspect.getsource(nvdlib.cve.searchCVE))
+PY
+
+  166  python3 - <<'PY'
+import inspect
+import nvdlib.get
+
+print(inspect.getsource(nvdlib.get.__get))
+PY
+
+  167  python3 - <<'PY'
+import inspect
+import nvdlib.cve
+
+print(inspect.getsource(nvdlib.cve.__buildCVECall))
+PY
+
+  168  python3 - <<'PY'
+import nvdlib
+
+cpe = "cpe:2.3:o:linux:linux_kernel:6.12.43:*:*:*:*:*:*:*"
+
+print("CPE:", cpe)
+print("Number of fields:", len(cpe.split(":")))
+
+try:
+    r = nvdlib.searchCVE(
+        cpeName=cpe,
+        key=None,
+        limit=1
+    )
+
+    print("SUCCESS")
+    print("Number returned:", len(r))
+
+    if r:
+        print("First CVE:", r[0].id)
+
+except Exception as e:
+    print("FAILED")
+    print(type(e).__name__, e)
+PY
+
+  169  python3 - <<'PY'
+KERNEL_VERSION = "6.12.43"
+
+cpe = (
+    'cpe:2.3:o:linux:linux_kernel:'
+    + KERNEL_VERSION
+    + ':*:*:*:*:*:*:*'
+)
+
+print(repr(cpe))
+print(cpe.split(":"))
+print("fields:", len(cpe.split(":")))
+PY
+
+  170  cd ~/kernel_Source/licc
+  171  python3 - <<'PY'
+import nvdlib
+
+KERNEL_VERSION = "6.12.43"
+
+cpe = (
+    "cpe:2.3:o:linux:linux_kernel:"
+    + KERNEL_VERSION
+    + ":*:*:*:*:*:*:*"
+)
+
+print("CPE:", repr(cpe))
+
+try:
+    r = nvdlib.searchCVE(
+        cpeName=cpe,
+        key=None
+    )
+
+    print("SUCCESS")
+    print("CVEs returned:", len(r))
+
+    for cve in r[:10]:
+        print(cve.id)
+
+except Exception as e:
+    print("FAILED:", type(e).__name__, e)
+PY
+
+  172  python3 licc.py --src /home/saurabh/kernel_Source/linux-socfpga/
+  173  ls
+  174  cd ..
+  175  ;s
+  176  zip licc/ licc.zip
+  177  zip licc.zip licc/
+  178  ls
+  179  zip licc.zip -r licc/
+  180  ls
+  181  unzip licc.zip 
+  182  ls
+  183  cp licc.zip 
+  184  cp licc.zip  ../.
+  185  cd ..
+  186  ;s
+  187  ls
+  188  cp 
+  189  find -iname VMshared
+  190  d /
+  191  find -iname VMshared
+  192  cd /mnt/
+  193  ls
+  194  cd ..
+  195  ls
+  196  cd ..
+  197  ls
+  198  cd /home/saurabh/
+  199  ;s
+  200  ls
+  201  git clone https://github.com/SkDev-9/QEMU.git
+  202  ls
+  203  cd QEMU/
+  204  ls
+  205  cp ../licc.zip .
+  206  lls
+  207  ls
+  208  git add licc.zip 
+  209  ls
+  210  git commit 
+  211  git config --global user.email "saurabhkatare28@gmail.com"
+  212  git config --global user.name "Saurabh"
+  213  git commit 
+  214  ls
+  215  git commit 
+  216  git push
+  217  ssh-keygen -t ed25519 -C "saurabhkatarecareer@gmail.com"
+  218  cd /home/saurabh/.ssh/
+  219  ls
+  220  cat id_ed25519.pub 
+  221  cd /home/saurabh/
+  222  ls
+  223  cd QEMU/
+  224  ks
+  225  ls
+  226  git add licc.zip 
+  227  git commit licc.zip 
+  228  git push licc.zip
+  229  cd ..
+  230  rm -rf QEMU/
+  231  ls
+  232  git clone https://github.com/SkDev-9/QEMU.git
+  233  cd QEMU/
+  234  ls
+  235  cp ../licc.zip .
+  236  ls
+  237  git add licc.zip 
+  238  git commit -m "licc"
+  239  git push 
+  240  git remote set-url origin git@github.com:SkDev-9/QEMU
+  241  git pull origin main
+  242  git add licc.zip 
+  243  git commit -m "licc"
+  244  git push 
+  245  history 
+  246  history > commands.txt
